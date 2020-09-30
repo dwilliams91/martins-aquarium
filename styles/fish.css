@@ -1,0 +1,12 @@
+.fishItem{
+    display:flex
+}
+.fishItem__pic{
+    margin:5px;
+}
+.fishList{
+    flex-basis:75%;
+}
+.fishItem__pic_displayed{
+    width:300px
+}

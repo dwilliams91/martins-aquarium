@@ -1,4 +1,22 @@
-#fishtank{}
-.fish{}
-.fish_name{}
+@import "fish.css";
 
+article, aside {
+    border:1px solid black
+}
+
+
+.Travel__tips_pics{
+    width:300px
+}
+.careTips{
+    flex-basis:20%;
+}
+.flexAside{
+    display:flex
+}
+.Travel__locations_flex{
+    display:flex;
+}
+.Travel__locations__Item{
+    margin:5px;
+}
