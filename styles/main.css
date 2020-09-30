@@ -1,15 +1,20 @@
 @import "fish.css";
 
+h1, h3{
+    text-align:center
+}
 article, aside {
     border:1px solid black
 }
 
 
 .Travel__tips_pics{
-    width:300px
+    width:400px
 }
 .careTips{
-    flex-basis:20%;
+    flex-basis:24%;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/71OTUjY4s2L._AC_SL1200_.jpg);
+    color:white
 }
 .flexAside{
     display:flex
@@ -19,4 +24,7 @@ article, aside {
 }
 .Travel__locations__Item{
     margin:5px;
+}
+.travel{
+    background-color: skyblue;
 }

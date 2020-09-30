@@ -1,12 +1,12 @@
 .fishItem{
     display:flex
 }
-.fishItem__pic{
-    margin:5px;
-}
+
 .fishList{
     flex-basis:75%;
+    background-color: royalblue;
+    color:white;
 }
-.fishItem__pic_displayed{
+.fishItem__pic-displayed{
     width:300px
 }
