@@ -19,3 +19,6 @@ article, aside {
 .flexAside{
     display:flex
 }
+header{
+    background-color: thistle;
+}

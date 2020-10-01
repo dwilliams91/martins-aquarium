@@ -1,5 +1,8 @@
 .fishItem{
-    display:flex
+    display: flex;
+    border:2px solid black;
+    margin: 10px 10px;
+    flex-basis:20%;
 }
 
 .fishList{
@@ -11,4 +14,12 @@
 }
 .fishItem__pic-displayed{
     width:300px
+}
+.fishFlex :hover{
+    background-color: teal;
+}
+.fishFlex{
+    display:flex;
+    flex-wrap: wrap;
+
 }
