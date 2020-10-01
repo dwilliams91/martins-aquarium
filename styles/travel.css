@@ -1,0 +1,12 @@
+.Travel__locations_flex{
+    display:flex;
+}
+.Travel__locations__Item{
+    margin:5px;
+}
+.travel{
+    background-color: skyblue;
+}
+#fiji_pic{
+    width:350px;
+}

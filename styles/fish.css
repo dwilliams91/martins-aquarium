@@ -6,6 +6,8 @@
     flex-basis:75%;
     background-color: royalblue;
     color:white;
+    padding: 5px 10%;
+    
 }
 .fishItem__pic-displayed{
     width:300px
