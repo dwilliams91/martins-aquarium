@@ -1,5 +1,6 @@
 .Travel__locations_flex{
     display:flex;
+    justify-content: space-evenly;
 }
 .Travel__locations__Item{
     margin:5px;
@@ -9,4 +10,11 @@
 }
 #fiji_pic{
     width:350px;
+}
+.Travel__tips_pics{
+    width:400px
+}
+.flexTips{
+    display:flex;
+    justify-content: space-evenly;
 }
