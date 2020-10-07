@@ -3,7 +3,7 @@ const fishCollection =[
         image:"https://i.pinimg.com/originals/94/f9/60/94f96079e6e5f5c2895bc39c929f0a0a.jpg",
         Species: "Scorpian Fish",
         Name: "Flub",
-        Length: "9 inches",
+        Length: 9,
         Location: "Indian Ocean",
         Food: "Crustaceans and Smaller Fish"
     },
@@ -11,7 +11,7 @@ const fishCollection =[
         image: "https://d2j6dbq0eux0bg.cloudfront.net/images/5391016/1117801547.jpg",
         Species: "Angel Fish",
         Name: "Bubbles",
-        Length: "2 inches",
+        Length: 2,
         Location: "Amazon River",
         Food: "Bugs and small fish"
     },
@@ -19,7 +19,7 @@ const fishCollection =[
         image:"https://m.liveaquaria.com/images/categories/large/lg_73746_Blue_Tang.jpg",
         Species: "Blue Tang",
         Name: "Dory",
-        Length: "9-12inch",
+        Length: 10,
         Location: "IndoPacific",
         Food: "Plankton"
     }
