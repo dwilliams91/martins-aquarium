@@ -6,7 +6,7 @@ export const FishList = () => {
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".fishContainer")
     const fishes = useFish()
-    console.log(contentElement)
+    
     // Add to the existing HTML in the content element
     let fishHTMLRepresentation = " "
     for (const fish of fishes) {
