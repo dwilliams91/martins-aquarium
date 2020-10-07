@@ -19,5 +19,8 @@ const fishCollection =[
         Length: "9-12inch",
         Location: "IndoPacific",
         Food: "Plankton"
-    },
+    }
 ]
+export const useFish = () => {
+    return fishCollection.slice()
+}
