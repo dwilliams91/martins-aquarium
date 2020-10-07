@@ -1,6 +1,7 @@
 
 export const Fish = (fishObj) => {
     return `
+
     <div class=fishItem>
     <div class=fishItem__pic>
         <img class=fishItem__pic-displayed
