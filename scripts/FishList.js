@@ -20,9 +20,11 @@ export const FishList = () => {
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".fishContainer")
     
-    // the line below would filter the fish to just display holy fish
+    // the line below invokes the holyfish filter function from the data provider
     const holyFish=mostHolyFish()
+    // then this line calls the function above that turns it into the html
     const holyFishHTML=buildFishContainerHTML(holyFish)
+
 
     const soldiers=soldierFish()
     const soldierFishHTML=buildFishContainerHTML(soldiers)
