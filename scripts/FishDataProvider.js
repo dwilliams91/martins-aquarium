@@ -1,6 +1,6 @@
-const fishCollection =[
+const fishCollection = [
     {
-        Image:"https://i.pinimg.com/originals/94/f9/60/94f96079e6e5f5c2895bc39c929f0a0a.jpg",
+        Image: "https://i.pinimg.com/originals/94/f9/60/94f96079e6e5f5c2895bc39c929f0a0a.jpg",
         Species: "Scorpian Fish",
         Name: "Flub",
         Length: 9,
@@ -16,15 +16,15 @@ const fishCollection =[
         Food: "Bugs and small fish"
     },
     {
-        Image:"https://m.liveaquaria.com/images/categories/large/lg_73746_Blue_Tang.jpg",
+        Image: "https://m.liveaquaria.com/images/categories/large/lg_73746_Blue_Tang.jpg",
         Species: "Blue Tang",
         Name: "Dory",
-        Length: 10,
+        Length: 18,
         Location: "IndoPacific",
         Food: "Plankton"
     },
     {
-        Image:"https://i.pinimg.com/originals/94/f9/60/94f96079e6e5f5c2895bc39c929f0a0a.jpg",
+        Image: "https://i.pinimg.com/originals/94/f9/60/94f96079e6e5f5c2895bc39c929f0a0a.jpg",
         Species: "Scorpian Fish",
         Name: "Flub 2",
         Length: 15,
@@ -40,7 +40,7 @@ const fishCollection =[
         Food: "Bugs and small fish"
     },
     {
-        Image:"https://m.liveaquaria.com/images/categories/large/lg_73746_Blue_Tang.jpg",
+        Image: "https://m.liveaquaria.com/images/categories/large/lg_73746_Blue_Tang.jpg",
         Species: "Blue Tang",
         Name: "Dory 2",
         Length: 12,
@@ -55,24 +55,34 @@ export const useFish = () => {
 
 // filtering
 
-export const mostHolyFish () => {
-    // 3, 6, 9, 12, etc... fish
+export const mostHolyFish = () => {
     const holyFish = []
 
     for (const fish of fishCollection) {
-    if (fish.Length % 3===0){
-        holyFish.push(fish)
+        if (fish.Length % 3 === 0) {
+            holyFish.push(fish)
+        }
+        
     }
-  
+    console.log(holyFish)
     return holyFish
 }
 
-export const soldierFish () => {
-    // 5, 10, 15, 20, 25, etc... fish
-    return soldiers
-}
+// export const soldierFish = () => {
+//     const soldiers=[]
+//     for (const fish of fishCollection) {
+//         if (fish.Length % 5===0 && fish.length % 3!==0){
+//             soldiers.push(fish)
+//         }
+//     return soldiers
+// }
 
-export const nonHolyFish () => {
-    // Any fish not a multiple of 3 or 5
-    return regularFish
-}
+// }
+// export const nonHolyFish = () => {
+//     const regularFish=[]
+//     for (const fish of fishCollection){
+//         if (fish.length % 3 !==0 && fish.length % 5 !==0)
+//         regularFish.push(fish)
+//     }
+//     return regularFish
+// }

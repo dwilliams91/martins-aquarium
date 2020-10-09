@@ -12,4 +12,3 @@ const allTheFish = useFish()
 FishList()
 tipList()
 locationList()
-mostHolyFish

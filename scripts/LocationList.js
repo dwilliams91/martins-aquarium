@@ -22,7 +22,6 @@ export function locationList() {
     }
     // this part puts in where the text needs to go
 
-    console.log(locationHTML)
     locationArea.innerHTML += `
     
     
