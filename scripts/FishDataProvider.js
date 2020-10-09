@@ -43,7 +43,7 @@ const fishCollection = [
         Image: "https://m.liveaquaria.com/images/categories/large/lg_73746_Blue_Tang.jpg",
         Species: "Blue Tang",
         Name: "Dory 2",
-        Length: 12,
+        Length: 7,
         Location: "IndoPacific",
         Food: "Plankton"
     }
@@ -53,7 +53,7 @@ export const useFish = () => {
     return fishCollection.slice()
 }
 
-// filtering
+// this filters fish divisable by 3 into holyfish
 
 export const mostHolyFish = () => {
     const holyFish = []
@@ -67,22 +67,25 @@ export const mostHolyFish = () => {
     console.log(holyFish)
     return holyFish
 }
+// this filters fish divisable by 5 into soldier
 
-// export const soldierFish = () => {
-//     const soldiers=[]
-//     for (const fish of fishCollection) {
-//         if (fish.Length % 5===0 && fish.length % 3!==0){
-//             soldiers.push(fish)
-//         }
-//     return soldiers
-// }
+export const soldierFish = () => {
+    const soldiers=[]
+    for (const fish of fishCollection) {
+        if (fish.Length % 5===0 && fish.length % 3!==0){
+            soldiers.push(fish)
+        }
+    return soldiers
+}
 
-// }
-// export const nonHolyFish = () => {
-//     const regularFish=[]
-//     for (const fish of fishCollection){
-//         if (fish.length % 3 !==0 && fish.length % 5 !==0)
-//         regularFish.push(fish)
-//     }
-//     return regularFish
-// }
+// this filters for the normal fish
+
+}
+export const nonHolyFish = () => {
+    const regularFish=[]
+    for (const fish of fishCollection){
+        if (fish.length % 3 !==0 && fish.length % 5 !==0)
+        regularFish.push(fish)
+    }
+    return regularFish
+}

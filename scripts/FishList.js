@@ -1,4 +1,4 @@
-import { useFish,mostHolyFish } from './FishDataProvider.js'
+import { useFish,mostHolyFish, soldierFish, nonHolyFish } from './FishDataProvider.js'
 import { Fish } from "./Fish.js"
 
 // This builds the html for whatever array we want
@@ -23,12 +23,19 @@ export const FishList = () => {
     // the line below would filter the fish to just display holy fish
     const holyFish=mostHolyFish()
     const holyFishHTML=buildFishContainerHTML(holyFish)
-    
 
+    const soldiers=soldierFish()
+    const soldierFishHTML=buildFishContainerHTML(soldiers)
+
+    const regular=nonHolyFish()
+    const regularFishHTML=buildFishContainerHTML(regular)
+    
 
     contentElement.innerHTML += `
     <article class="fishList">
     ${holyFishHTML}
+    ${soldierFishHTML}
+    ${regularFishHTML}
     </article>
     `
 }
