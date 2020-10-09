@@ -2,14 +2,14 @@
     display: flex;
     border:2px solid black;
     margin: 10px 10px;
-    flex-basis:1em;
+    flex-basis:500px;
 }
 
 .fishArea{
     flex-basis:75%;
     background-color: royalblue;
     color:white;
-    padding: 5px 20px;
+    padding: 5px 5%;
     
 }
 .fishItem__pic-displayed{
