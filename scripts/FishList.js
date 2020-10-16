@@ -4,10 +4,9 @@ import { Fish } from "./Fish.js"
 // This builds the html for whatever array we want
 const buildFishContainerHTML= (arrayOfFish)=>{
     let fishHTMLRepresentation = " "
-    for (const fish of arrayOfFish) {
-        fishHTMLRepresentation += Fish(fish)
-    }
-    return fishHTMLRepresentation
+    
+    // ${holyFish.map(taco => fish(taco)).join(``)}
+    return `${arrayOfFish.map(taco=> Fish(taco)).join()}`
 }
 
 
@@ -32,12 +31,23 @@ export const FishList = () => {
     const regular=nonHolyFish()
     const regularFishHTML=buildFishContainerHTML(regular)
     
+    // ${locations.map(location => LocationAsHTML(location)).join("")}
 
     contentElement.innerHTML += `
     <article class="fishList">
-    ${holyFishHTML}
-    ${soldierFishHTML}
-    ${regularFishHTML}
+    ${holyFish.map(taco=> Fish(taco)).join(``)}
+    ${soldiers.map(monkeyButt=>Fish(monkeyButt)).join()}
+    ${regular.map(practiceWithMapping=>Fish(practiceWithMapping)).join()}
     </article>
     `
 }
+
+// contentElement.innerHTML += `
+//     <article class="fishList">
+//     ${holyFishHTML}
+//     ${soldierFishHTML}
+//     ${regularFishHTML}
+//     </article>
+//     `
+
+// ${holyFish.map(taco => fish(taco)).join(``)}
