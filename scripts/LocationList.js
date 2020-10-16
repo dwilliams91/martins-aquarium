@@ -24,8 +24,8 @@ export function locationList() {
 
     locationArea.innerHTML += `
     
-    
-        ${locationHTML}
+        ${ locations.map(location => createLocation(location)).join("")}
+    }
     
     `
 
